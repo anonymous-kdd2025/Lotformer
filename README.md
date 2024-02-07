@@ -4,10 +4,23 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 ![Model architecture](./architecture.png)
 
 ## Guidelines for using LT-Transformer
-### Download model
-### Download dataset
+### Download model & dataset
+```bash
+git clone https://github.com/zhangyuanyuzyy/LT-Transformer.git
+```
+
 ### Parameters
+
 ### Running model
+1. Simulation data for R Transformer
+```bash
+python simulation -m r_transformer -r 5 -d 3
+```
+
+2. Simulation data for C Transformer
+```bash
+python simulation -m c_transformer -r 5 -d 3
+```
 
 ## Results
 ### results on simulation dataset
