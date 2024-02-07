@@ -1,7 +1,7 @@
 # LT-Transformer
 Estimating the long-term treatment impact is crucial in many areas such as business and medicine.  The main difficulty of this problem is that observing the long-term effect requires unacceptable costs and duration typically far longer than the decision-making window. The milestone work is to use a set of surrogate metrics to predict the long-term result. However, it is still challenged by issues of unobserved confounders inside the causal pathways. In real-world scenarios, the metrics often exhibit strong temporal correlations, and these temporal correlations are usually informative of unobserved variables. Based on this idea, a novel Transformer-based model which we call LT-Transformer is proposed to combine time-series modeling and latent variable representation to capture long-term outcomes with better accuracy. A simulation study and a real-world case study are then performed and LT-Transformer decreases the mean absolute error by 35.1\% compared with other state-of-the-art works. The trustworthiness of using the LT-Transformer is also discussed, showing that it is applicable in online controlled experiments.
 
-![Model architecture](./structure.pdf)
+![Model architecture](./architecture.pdf)
 
 ## Guidelines for LT-Transformer
 
