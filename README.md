@@ -18,6 +18,7 @@ git clone https://github.com/zhangyuanyuzyy/LT-Transformer-Dataset.git
 ```
 
 Unpack the downloaded dataset and put directory `dataset` under the `LT-Transformer` directory, such that
+```
 .(LT-Transformer)
 ├── dataset
 │   ├── synthetic dataset 1
@@ -31,7 +32,7 @@ Unpack the downloaded dataset and put directory `dataset` under the `LT-Transfor
 │   └── synthetic dataset 9
 ├── experiment
 └── model
-
+```
 ### Parameters
 
 Basic information of Simulation dataset:
