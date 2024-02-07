@@ -4,12 +4,31 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 ![Model architecture](./architecture.png)
 
 ## Guidelines for using LT-Transformer
+Below shows how to employ LT-Transformer on a simulation dataset. The real-world dataset is not shown confidentiality reasons.
+
 ### Download model & dataset
 ```bash
 git clone https://github.com/zhangyuanyuzyy/LT-Transformer.git
 ```
 
 ### Parameters
+
+Basic information of Simulation dataset:
+|Dataset|Size (Obs, Exp)|SNR|Estimated SNR|
+|----|----|----|----|
+|1 | 5000,2000| 2.11|17.73|
+|2 | 5000,2000|7.32|41.13|
+|3 | 5000,2000 |93.08|50.64|
+|4 | 50000,20000| 2.33|3.73|
+|5 | 50000,20000| 9.10|44.17|
+|6 | 50000,20000|77.33|362.79|
+|7 | 1000000,500000|2.13|1.46|
+|8 | 1000000,500000|10.16|32.26|
+|9 | 1000000,500000|94.24|56.80|
+
+The hyperparameters of R Transformer on each dataset is 
+
+The hyperparameters of R Transformer on each dataset is 
 
 ### Running model
 1. Simulation data for R Transformer
