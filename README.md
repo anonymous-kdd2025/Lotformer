@@ -7,9 +7,30 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 Below shows how to employ LT-Transformer on a simulation dataset. The real-world dataset is not shown confidentiality reasons.
 
 ### Download model & dataset
+LT-Transformer could downloaded via
 ```bash
 git clone https://github.com/zhangyuanyuzyy/LT-Transformer.git
 ```
+
+The simulation dataset could be downloaded via
+```bash
+git clone https://github.com/zhangyuanyuzyy/LT-Transformer-Dataset.git
+```
+
+Unpack the downloaded dataset and put directory `dataset` under the `LT-Transformer` directory, such that
+.(LT-Transformer)
+├── dataset
+│   ├── synthetic dataset 1
+│   ├── synthetic dataset 2
+│   ├── synthetic dataset 3
+│   ├── synthetic dataset 4
+│   ├── synthetic dataset 5
+│   ├── synthetic dataset 6
+│   ├── synthetic dataset 7
+│   ├── synthetic dataset 8
+│   └── synthetic dataset 9
+├── experiment
+└── model
 
 ### Parameters
 
