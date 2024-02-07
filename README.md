@@ -4,6 +4,10 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 ![Model architecture](./architecture.png)
 
 ## Guidelines for using LT-Transformer
+### Download model
+### Download dataset
+### Parameters
+### Running model
 
 ## Results
 ### results on simulation dataset
