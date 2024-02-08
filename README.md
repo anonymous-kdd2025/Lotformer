@@ -49,8 +49,30 @@ Basic information of Simulation dataset:
 |9 | 1000000,500000|94.24|56.80|
 
 The hyperparameters of R Transformer on each dataset is 
+|Dataset|de|dk|dv|dh|nl|nh|drop|b|e|lr|tl|g|wd|lbd|
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|1
+|2
+|3
+|4
+|5
+|6
+|7
+|8
+|9
 
 The hyperparameters of R Transformer on each dataset is 
+|Dataset|de|dk|dv|dh|dc|nl|nh|drop|b|e|lr|tl|g|wd|lbd|
+|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
+|1
+|2
+|3
+|4
+|5
+|6
+|7
+|8
+|9
 
 ### Running model
 1. Simulation data for R Transformer
