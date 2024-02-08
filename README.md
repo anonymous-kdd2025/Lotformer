@@ -48,7 +48,7 @@ Basic information of Simulation dataset:
 |8 | 1000000,500000|10.16|32.26|
 |9 | 1000000,500000|94.24|56.80|
 
-The hyperparameters of R Transformer on each dataset is 
+The hyper-parameters of R Transformer on each dataset is 
 |Dataset|de|dk|dv|dh|nl|nh|drop|b|e|tl|lr|g|wd|lbd|
 |----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
 |1|64|32|32|32|4|8|0.1|512|80|20|2e-4|0.2|1e-3|1.0|
@@ -64,26 +64,30 @@ The hyperparameters of R Transformer on each dataset is
 The hyperparameters of R Transformer on each dataset is 
 |Dataset|de|dk|dv|dh|dc|nl|nh|drop|b|e|lr|tl|g|wd|lbd|
 |----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|----|
-|1
-|2
-|3
-|4
-|5
-|6
-|7
-|8
-|9
+|1|64|32|32|64|256|6|8|0.1|512|60|1e-3|20|0.1|1e-3|1.0|
+|2|64|32|32|64|256|6|8|0.1|512|60|1e-3|20|0.1|1e-3|1.0|
+|3|64|32|32|64|256|6|8|0.1|512|60|1e-3|20|0.1|1e-3|1.0|
+|4|64|32|32|64|256|6|8|0.1|512|20|1e-3|5|0.1|1e-3|1.0|
+|5|64|32|32|64|256|6|8|0.1|512|20|1e-3|5|0.1|1e-3|1.0|
+|6|64|32|32|64|256|6|8|0.1|512|20|1e-3|5|0.1|1e-3|1.0|
+|7|64|32|32|64|256|6|8|0.1|512|20|1e-3|5|0.1|1e-3|1.0|
+|8|64|32|32|64|256|6|8|0.1|512|20|1e-3|5|0.1|1e-3|1.0|
+|9|64|32|32|64|256|6|8|0.1|512|20|1e-3|5|0.1|1e-3|1.0|
+
+Please refer to the "help" in the code (simulation.py) for meanings of the hyper-parameters. 
 
 ### Running model
 1. Simulation data for R Transformer
 ```bash
-python simulation -m r_transformer -r 5 -d 3
+python simulation -m r_transformer -r 5 -d 3 -s 11
 ```
 
 2. Simulation data for C Transformer
 ```bash
-python simulation -m c_transformer -r 5 -d 3
+python simulation -m c_transformer -r 5 -d 3 -s 11
 ```
+
+For other hyper-parameters of model and training process, please look the Parameters section.
 
 ## Results
 ### results on simulation dataset
