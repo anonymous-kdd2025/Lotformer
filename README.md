@@ -79,12 +79,12 @@ Please refer to the "help" in the code (simulation.py) for meanings of the hyper
 ### Running model
 1. Simulation data for R Transformer
 ```bash
-python simulation -m r_transformer -r 5 -d 3 -s 11
+python simulation.py -m r_transformer -r 5 -d 3 -s 11
 ```
 
 2. Simulation data for C Transformer
 ```bash
-python simulation -m c_transformer -r 5 -d 3 -s 11
+python simulation.py -m c_transformer -r 5 -d 3 -s 11
 ```
 
 For other hyper-parameters of model and training process, please look the Parameters section.
