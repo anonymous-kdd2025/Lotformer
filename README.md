@@ -103,6 +103,8 @@ For other hyper-parameters of model and training process, please look the Parame
 |8                   |0.0011    ±0.0002   |**0.0010    ±0.0002**   |0.0046    ±0.0000   |0.0080    ±0.0000   |0.0047    ±0.0000   |0.0127    ±0.0003   |0.0116    ±0.0034    |
 |9                   |0.0008    ±0.0003   |**0.0005    ±0.0003**   |0.0102    ±0.0000   |0.0184    ±0.0000   |0.0105    ±0.0000   |0.0006    ±0.0001   |0.0094    ±0.0069    |
 
+Comparison among the models could further use ltce packages which integrate all these 7 model and developed by our team. To use ltce, please visit https://pypi.org/project/ltce/#description.
+
 ### results on real-world dataset
 |Country|C Transformer|R Transformer|SInd-Linear|SInd-MLP|SInd-DLinear|LTEE|LASER|
 | ---- |---- |---- |---- |---- |---- |---- |---- |
