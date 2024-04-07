@@ -4,7 +4,7 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 ![Model architecture](./architecture.png)
 
 ## Guidelines for using LT-Transformer
-Below shows how to employ LT-Transformer on a simulation dataset. The real-world dataset is not shown confidentiality reasons.
+Below shows how to employ LT-Transformer on a simulation dataset. The real-world dataset is not shown due to confidentiality reasons.
 
 ### Download model & dataset
 LT-Transformer could downloaded via
@@ -90,6 +90,7 @@ python simulation.py -m c_transformer -r 5 -d 3 -s 11
 For other hyper-parameters of model and training process, please look the Parameters section.
 
 ## Results
+The models are running on a 8 core CPU with 32GB memory, and a single 16GB GPU of NVIDIA V100.
 ### results on simulation dataset
 |Dataset             |C Transformer       |R Transformer       |SInd-Linear         |SInd-MLP            |SInd-DLinear        |LTEE                |LASER |
 | ---- |---- |---- |---- |---- |---- |---- |---- |
@@ -104,6 +105,15 @@ For other hyper-parameters of model and training process, please look the Parame
 |9                   |0.0008    ±0.0003   |**0.0005    ±0.0003**   |0.0102    ±0.0000   |0.0184    ±0.0000   |0.0105    ±0.0000   |0.0006    ±0.0001   |0.0094    ±0.0069    |
 
 Comparison among the models could further use ltce packages which integrate all these 7 model and developed by our team. To use ltce, please visit https://pypi.org/project/ltce/#description.
+
+### model efficiency
+The model efficiency was compared below.
+|Time per epoch(secs) / Total time(secs)	|R Transformer	|C Transformer	|SInd-Linear *	|SInd-MLP *	|SInd-DLinear *|	LTEE	|LASER	|SemiParam *|
+| ---- |---- |---- |---- |---- |---- |---- |---- |---- |
+|Dataset 1～3|	1.5/120|	1.9/113.3|	0.1/33|	0.1/27.2|	0.1/38.5|	2.0/119.0|	0.3/15.4|	-/21.0|
+|Dataset 4～6|	8.1/242|	18.5/369.9|	1.0/193.4|	1.3/127.8|	1.2/232.2|	21.1/422.0|	2.5/148.9|	-/40.9|
+|Dataset 7～9|	163.4/3268.6|	76.0/1519.9|	25.1/5020|	28.2/2821.5|	30.0/2961|	551.4/11027.4|	59.2/1183.9|	-/307.9|
+*: the effeiciency is obtained on CPU.
 
 ### results on real-world dataset
 |Country|C Transformer|R Transformer|SInd-Linear|SInd-MLP|SInd-DLinear|LTEE|LASER|
