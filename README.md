@@ -4,6 +4,7 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 ![Model architecture](./architecture.png)
 
 The causal graph studied in this work.
+
 ![Causal graph](./scm.png)
 
 ## Guidelines for using LT-Transformer
