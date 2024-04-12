@@ -110,6 +110,7 @@ The models were run on a 8 core CPU with 32GB memory, and a single 16GB GPU of N
 |mean                |**0.0033   ±0.0053**  |**0.0033   ±0.0024**  |0.0119   ±0.0074  |0.0133   ±0.0051  |0.0164   ±0.0106  |0.0128   ±0.0111  |0.0148    ±0.0127  |0.0564   ±0.1140  |0.0040   ±0.0021  |
 
 We provide a graph to visualize the result.
+
 ![Simulation Results]('./simresult.png')
 
 Comparison among the models could further use ltce packages which integrate all these model. To use ltce, please visit https://pypi.org/project/ltce/#description.
