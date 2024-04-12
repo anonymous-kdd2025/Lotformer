@@ -111,7 +111,7 @@ The models were run on a 8 core CPU with 32GB memory, and a single 16GB GPU of N
 
 We provide a graph to visualize the result.
 
-![Simulation Results]('./simresult.png')
+![Simulation Results](./simresult.png)
 
 Comparison among the models could further use ltce packages which integrate all these model. To use ltce, please visit https://pypi.org/project/ltce/#description.
 
