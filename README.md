@@ -3,6 +3,9 @@ Estimating the long-term treatment impact is crucial in many areas such as busin
 
 ![Model architecture](./architecture.png)
 
+The causal graph studied in this work.
+![Causal graph](./scm.png)
+
 ## Guidelines for using LT-Transformer
 Below shows how to employ LT-Transformer on a simulation dataset. The real-world dataset is not shown due to confidentiality reasons.
 
@@ -92,7 +95,7 @@ For other hyper-parameters of model and training process, please look the Parame
 ## Results
 The models were run on a 8 core CPU with 32GB memory, and a single 16GB GPU of NVIDIA V100.
 ### results on simulation dataset
-|Dataset             |C Transformer       |R Transformer       |SInd-Linear         |SInd-MLP            |SInd-DLinear        |LTEE                |LASER | Kallus 2020| Chen 2023|
+|Dataset             |C Transformer       |R Transformer       |SInd-Linear         |SInd-MLP            |SInd-DLinear        |LTEE                |LASER | KF(Kallus 2020)| DML(Chen 2023)|
 | ---- |---- |---- |---- |---- |---- |---- |---- |---- |---- |
 |1                   |**0.0012    ±0.0006**   |0.0057    ±0.0043   |0.0286    ±0.0001   |0.0209    ±0.0028   |0.0316    ±0.0167   |0.0362    ±0.0019   |0.0185    ±0.0050    | 0.0032    ±0.0022   |0.0045    ±0.0008|
 |2                   |**0.0006    ±0.0004**   |0.0069    ±0.0059   |0.0147    ±0.0001   |0.0157    ±0.0050   |0.0313    ±0.0246   |0.0263    ±0.0041   |0.0485    ±0.0062    | 0.0018    ±0.0013   |0.0019    ±0.0005|
@@ -105,11 +108,13 @@ The models were run on a 8 core CPU with 32GB memory, and a single 16GB GPU of N
 |9                   |0.0008    ±0.0003   |**0.0005    ±0.0003**   |0.0102    ±0.0000   |0.0184    ±0.0000   |0.0105    ±0.0000   |0.0006    ±0.0001   |0.0094    ±0.0069    | 0.3658    ±0.2918   |0.0047    ±0.0001|
 |mean                |**0.0033   ±0.0053**  |**0.0033   ±0.0024**  |0.0119   ±0.0074  |0.0133   ±0.0051  |0.0164   ±0.0106  |0.0128   ±0.0111  |0.0148    ±0.0127  |0.0564   ±0.1140  |0.0040   ±0.0021  |
 
-Comparison among the models could further use ltce packages which integrate all these 7 model and developed by our team. To use ltce, please visit https://pypi.org/project/ltce/#description.
+We provide a graph to visualize the result.
 ![Simulation Results](./result.png)
 
+Comparison among the models could further use ltce packages which integrate all these model. To use ltce, please visit https://pypi.org/project/ltce/#description.
+
 ### model efficiency
-The model efficiency was compared below.
+The model runtime was compared below.
 |Time per epoch(secs) / Total time(secs)	|R Transformer	|C Transformer	|SInd-Linear *	|SInd-MLP *	|SInd-DLinear *|	LTEE	|LASER	|Kallus 2020 *|Chen 2023 *|
 | ---- |---- |---- |---- |---- |---- |---- |---- |---- |---- |
 |Dataset 1～3|	1.5/120|	1.9/113.3|	0.1/33|	0.1/27.2|	0.1/38.5|	2.0/119.0|	0.3/15.4|	-/21.0|-/1.6|
@@ -119,7 +124,7 @@ The model efficiency was compared below.
 *: the effeiciency is obtained on CPU.
 
 ### results on real-world dataset
-|Country|C Transformer|R Transformer|SInd-Linear|SInd-MLP|SInd-DLinear|LTEE|LASER|Kallus 2020| Chen 2023|
+|Country|C Transformer|R Transformer|SInd-Linear|SInd-MLP|SInd-DLinear|LTEE|LASER|KF| DML|
 | ---- |---- |---- |---- |---- |---- |---- |---- | ---- | ---- |
 |A | **0.0221±0.0089** |0.0415±0.0129 |0.0622  ±0.0002 |0.0485  ±0.0009 |0.0555  ±0.0003 |0.1317  ±0.0078 |0.0627  ±0.0101 |0.0750    ±0.0159   |0.0446    ±0.0262   |
 |B | 0.0408  ±0.0265 |0.0322  ±0.0127 |0.0742  ±0.0016 |0.0480  ±0.0112 | **0.0091  ±0.0021** |0.1233  ±0.0438 |0.1332  ±0.0028 |0.2419    ±0.0248   |0.2687    ±0.0172   |
