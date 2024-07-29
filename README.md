@@ -11,7 +11,7 @@ Below shows how to employ *Lotformer* on a simulation dataset. The real-world da
 ### Download model & dataset
 *Lotformer* could downloaded via
 ```bash
-git clone https://github.com/zhangyuanyuzyy/LT-Transformer.git
+git clone https://github.com/anonymous-kdd2025/Lotformer.git
 ```
 
 The simulation dataset could be downloaded via
